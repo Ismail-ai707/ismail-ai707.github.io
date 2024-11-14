@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Portfolio Details - CandidAI Resume Parser</title>
+  <meta name="description" content="Detailed view of the CandidAI Resume Parser project.">
+  <meta name="keywords" content="AI, Resume Parser, Natural Language Processing, AWS">
+
+  <!-- Favicons -->
+  <link href="assets/img/minecraft-avatar-rembg.png" rel="icon">
+  <!-- <link href="assets/img/minecraft-avatar-rembg.png" rel="apple-touch-icon"> -->
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Main CSS File -->
+  <link href="assets/css/main.css" rel="stylesheet">
+</head>
+
+<body class="portfolio-details-page">
+
+  <header id="header" class="header d-flex align-items-center sticky-top">
+    <div class="container-fluid container-xl position-relative d-flex align-items-center justify-content-between">
+      <a href="index.html" class="logo d-flex align-items-center">
+        <h1 class="sitename">DevFolio</h1>
+      </a>
+
+      <nav id="navmenu" class="navmenu">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#portfolio">Portfolio</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+        <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+      </nav>
+    </div>
+  </header>
+
+  <main class="main">
+
+    <!-- Page Title -->
+    <div class="page-title" data-aos="fade">
+      <div class="container d-lg-flex justify-content-between align-items-center">
+        <h1 class="mb-2 mb-lg-0">CandidAI Resume Parser</h1>
+        <nav class="breadcrumbs">
+          <ol>
+            <li><a href="index.html">Home</a></li>
+            <li class="current">Portfolio Details</li>
+          </ol>
+        </nav>
+      </div>
+    </div><!-- End Page Title -->
+
+    <!-- Portfolio Details Section -->
+    <section id="portfolio-details" class="portfolio-details section">
+      <div class="container" data-aos="fade-up">
+        <div class="portfolio-details-slider swiper init-swiper">
+          <script type="application/json" class="swiper-config">
+          {
+              "loop": true,
+              "speed": 600,
+              "autoplay": {
+                  "delay": 5000
+              },
+              "slidesPerView": "auto",
+              "navigation": {
+                  "nextEl": ".swiper-button-next",
+                  "prevEl": ".swiper-button-prev"
+              },
+              "pagination": {
+                  "el": ".swiper-pagination",
+                  "type": "bullets",
+                  "clickable": true
+              }
+          }
+          </script>
+          <div class="swiper-wrapper align-items-center">
+            <div class="swiper-slide">
+              <img src="assets/img/portfolio/resume-parser.png" alt="CandidAI Resume Parser" style="width: 100%; height: auto; margin-bottom: 20px;">
+            </div>
+            <!-- Add more slides if needed -->
+          </div>
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div>
+          <div class="swiper-pagination"></div>
+        </div>
+
+        <div class="row justify-content-between gy-4 mt-4">
+          <div class="col-lg-8" data-aos="fade-up">
+            <div class="portfolio-description">
+              <h2>Personal Project: CandidAI</h2>
+              <p>An AI-powered app that analyzes job applications and provides personalized summaries for recruiters.</p>
+              <h5>Components:</h5>
+              <ul>
+                <li>Resume Parser</li>
+                <li>Candidate Ranking System</li>
+                <li>Summarization Engine</li>
+                <li>Job Recommendation System</li>
+              </ul>
+              <p><strong>Tools:</strong> Django, NLTK/Spacy, LLM, Pydantic</p>
+
+              <h3>Resume Parser</h3>
+              <p>A serverless AI-powered resume parsing solution that leverages AWS services and OpenAI API to automatically extract and structure information from resumes.</p>
+
+              <h5>🏗️ Architecture</h5>
+              <img src="assets/img/resume-parser-archi.png" alt="Architecture Diagram" style="max-width: 800px; height: auto; margin-bottom: 20px;">
+
+              <h5>Frontend</h5>
+              <p>HTML5, TailwindCSS, AWS SDK</p>
+
+              <h5>Backend</h5>
+              <ul>
+                <li>AWS Lambda (Python)</li>
+                <li>Storage: Amazon S3 with Transfer Acceleration for fast upload/download</li>
+                <li>API: Amazon API Gateway (RESTful)</li>
+              </ul>
+              <h5>Lambda Function Workflow</h5>
+              <img src="assets/img/lambda-wf.png" alt="Lambda Function Workflow" style="max-width: 800px; height: auto; margin-bottom: 20px;">
+            </div>
+            <h5>Results</h5>
+            <div class="results-section">
+                <p>The CandidAI Resume Parser demonstrates high accuracy and efficiency in processing job applications. Key highlights include:</p>
+                <ul>
+                    <li><strong>High Availability:</strong> Leveraging AWS services, the application is designed for high availability, ensuring that it remains operational and accessible to users at all times.</li>
+                    <li><strong>Low Latency Response:</strong> With the implementation of AWS Lambda and API Gateway, the app provides low-latency responses, allowing recruiters to receive insights in real-time.</li>
+                    <li><strong>High Scalability:</strong> The architecture is built to scale seamlessly with demand, utilizing AWS services such as S3 Transfer Acceleration for fast uploads and downloads, and CloudFront as a Content Delivery Network (CDN) to enhance performance globally.</li>
+                    <li><strong>Cost-Effectiveness:</strong> By utilizing serverless architecture, the application minimizes operational costs, allowing for efficient resource management and billing based on actual usage.</li>
+                    <li><strong>User-Friendly Interface:</strong> The frontend is designed with user experience in mind, providing a simple interface to easily sumbit and process resumes.</li>
+                </ul>
+            </div>
+          </div>
+          <div class="col-lg-3" data-aos="fade-up" data-aos-delay="100">
+            <div class="portfolio-info">
+              <h3>Project Information</h3>
+              <ul>
+                <li><strong>Category:</strong> AI & Cloud</li>
+                <li><strong>Client:</strong> Self-initiated</li>
+                <li><strong>Project Date:</strong> October 2024</li>
+                <li>
+                    <strong>Project URL:</strong> 
+                    <span>For more details about this project, please visit this GitHub repository:</span>
+                    <a href="https://github.com/Ismail-ai707/data-engineering/tree/main/resume-parser-ai" target="_blank" class="btn btn-github" style="background-color: #121269; color: #ffffff; padding: 8px 12px; border-radius: 5px; text-decoration: none; display: inline-block; margin-top: 5px;">
+                        GitHub Repository
+                    </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section><!-- /Portfolio Details Section -->
+  </main>
+
+  <footer id="footer" class="footer accent-background" style="background-color: #0a0a3b; color: #ffffff;">
+    <div class="container">
+      <div class="copyright text-center">
+        <p style="color: #0a0a3b; font-size: 14px;">© <span>Copyright</span> <strong class="px-3 sitename">DevFolio</strong> <span>All Rights Reserved</span></p>
+      </div>
+      <div class="social-links d-flex justify-content-center">
+        <a href="https://twitter.com/Irhazienv707" title="Twitter"><i class="bi bi-twitter-x"></i></a>
+        <a href="https://www.linkedin.com/in/rhazi-ismail" title="LinkedIn"><i class="bi bi-linkedin"></i></a>
+        <a href="https://github.com/your-github-username" title="GitHub"><i class="bi bi-github"></i></a>
+        <a href="https://www.kaggle.com/ismail707" title="Kaggle">
+          <img src="https://res.cloudinary.com/dta3jl4fm/image/upload/v1731588756/kaggle-logo_fwzrt1.png" alt="Kaggle" style="width: 25px; height: 20px;">
+        </a>
+        <a href="https://huggingface.co/Ismail-707" title="Hugging Face">
+          <img src="https://res.cloudinary.com/dta3jl4fm/image/upload/v1731588685/huggingface-logo_odfu39.avif" alt="Hugging Face" style="width: 20px; height: 20px;">
+        </a>
+      </div>
+      <div class="credits" style="color: #0a0a3b; font-size: 14px;">
+        Designed by <a href="https://bootstrapmade.com/" style="color: #0a0a3b;">BootstrapMade</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scroll Top -->
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Preloader -->
+  <div id="preloader"></div>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/typed.js/typed.umd.js"></script>
+  <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
+  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+
+  <!-- Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>

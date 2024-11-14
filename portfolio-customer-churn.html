@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Portfolio Details - Customer Churn Prediction</title>
+  <meta name="description" content="Detailed view of the Customer Churn Prediction project.">
+  <meta name="keywords" content="Customer Churn, Random Forest, Machine Learning, Streamlit">
+
+  <!-- Favicons -->
+  <link href="assets/img/minecraft-avatar-rembg.png" rel="icon">
+  <!-- <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon"> -->
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Main CSS File -->
+  <link href="assets/css/main.css" rel="stylesheet">
+</head>
+
+<body class="portfolio-details-page">
+
+  <header id="header" class="header d-flex align-items-center sticky-top">
+    <div class="container-fluid container-xl position-relative d-flex align-items-center justify-content-between">
+      <a href="index.html" class="logo d-flex align-items-center">
+        <h1 class="sitename">DevFolio</h1>
+      </a>
+
+      <nav id="navmenu" class="navmenu">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#portfolio">Portfolio</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+        <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+      </nav>
+    </div>
+  </header>
+
+  <main class="main">
+
+    <!-- Page Title -->
+    <div class="page-title" data-aos="fade">
+      <div class="container d-lg-flex justify-content-between align-items-center">
+        <h1 class="mb-2 mb-lg-0">Customer Churn Prediction</h1>
+        <nav class="breadcrumbs">
+          <ol>
+            <li><a href="index.html">Home</a></li>
+            <li class="current">Portfolio Details</li>
+          </ol>
+        </nav>
+      </div>
+    </div><!-- End Page Title -->
+
+    <!-- Portfolio Details Section -->
+    <section id="portfolio-details" class="portfolio-details section">
+      <div class="container" data-aos="fade-up">
+        <div class="portfolio-details-slider swiper init-swiper">
+          <script type="application/json" class="swiper-config">
+          {
+              "loop": true,
+              "speed": 600,
+              "autoplay": {
+                  "delay": 5000
+              },
+              "slidesPerView": "auto",
+              "navigation": {
+                  "nextEl": ".swiper-button-next",
+                  "prevEl": ".swiper-button-prev"
+              },
+              "pagination": {
+                  "el": ".swiper-pagination",
+                  "type": "bullets",
+                  "clickable": true
+              }
+          }
+          </script>
+          <div class="swiper-wrapper align-items-center">
+            <div class="swiper-slide">
+              <img src="https://github.com/user-attachments/assets/5d3b3229-2ff8-4123-825e-ca0f3ff0b9a7" alt="Churn Prediction App" style="width: 100%; height: auto; margin-bottom: 20px;">
+            </div>
+            <!-- Add more slides if needed -->
+          </div>
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div>
+          <div class="swiper-pagination"></div>
+        </div>
+
+        <div class="row justify-content-between gy-4 mt-4">
+          <div class="col-lg-8" data-aos="fade-up">
+            <div class="portfolio-description">
+              <h2>Churn Prediction Using Random Forest Classifier</h2>
+              <p>Developed a Streamlit app to predict customer churn for PowerCo, a gas and electricity supplier. You can access the app using <a href="https://machine-learning-qmmzenbm7jhzlrcvgn8ijh.streamlit.app" target="_blank">this link</a>.</p>
+
+              <h5>Overview</h5>
+              <p>This project uses a Random Forest Classifier to predict customer churn based on various factors such as electricity, gas, and power consumption. The model also considers net margin evolution, price changes, and sensitivity during off-peak, peak, and mid-peak periods. The complete process is detailed in the application, from data loading and exploratory data analysis to feature engineering, model building, and predictions.</p>
+
+              <h5>Features</h5>
+              <ul>
+                <li>Data Loading: Import and prepare datasets for analysis.</li>
+                <li>Exploratory Data Analysis (EDA): Analyze data to understand patterns and relationships.</li>
+                <li>Feature Engineering: Create and select relevant features for the model.</li>
+                <li>Model Building: Train a Random Forest Classifier on the prepared data.</li>
+                <li>Feature Importance: Extract and visualize important features used by the model.</li>
+                <li>Prediction: Make predictions based on the trained model.</li>
+              </ul>
+
+              <h5>Important Features</h5>
+              <img src="https://github.com/user-attachments/assets/ca76edfa-6172-406f-8253-ecc97ad68576" alt="Feature Importance Chart" style="max-width: 800px; height: auto; margin-bottom: 20px;">
+
+              <h5>Tools</h5>
+              <p>Python, Streamlit, Machine Learning</p>
+            </div>
+          </div>
+
+          <div class="col-lg-3" data-aos="fade-up" data-aos-delay="100">
+            <div class="portfolio-info">
+              <h3>Project Information</h3>
+              <ul>
+                <li><strong>Category:</strong> Machine Learning - Case Study</li>
+                <li><strong>Client:</strong> PowerCo</li>
+                <li><strong>Project Date:</strong> July 2024</li>
+                <li>
+                    <strong>Project URL:</strong> 
+                    <span>For more details about this project, please visit the Streamlit app:</span>
+                    <a href="https://machine-learning-qmmzenbm7jhzlrcvgn8ijh.streamlit.app" target="_blank" class="btn btn-github" style="background-color: #121269; color: #ffffff; padding: 8px 12px; border-radius: 5px; text-decoration: none; display: inline-block; margin-top: 5px;">
+                        Streamlit App
+                    </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section><!-- /Portfolio Details Section -->
+
+  </main>
+
+  <footer id="footer" class="footer accent-background" style="background-color: #0a0a3b; color: #ffffff;">
+    <div class="container">
+      <div class="copyright text-center">
+        <p style="color: #0a0a3b; font-size: 14px;">© <span>Copyright</span> <strong class="px-3 sitename">DevFolio</strong> <span>All Rights Reserved</span></p>
+      </div>
+      <div class="social-links d-flex justify-content-center">
+        <a href="https://twitter.com/Irhazienv707" title="Twitter"><i class="bi bi-twitter-x"></i></a>
+        <a href="https://www.linkedin.com/in/rhazi-ismail" title="LinkedIn"><i class="bi bi-linkedin"></i></a>
+        <a href="https://github.com/your-github-username" title="GitHub"><i class="bi bi-github"></i></a>
+        <a href="https://www.kaggle.com/ismail707" title="Kaggle">
+          <img src="https://res.cloudinary.com/dta3jl4fm/image/upload/v1731588756/kaggle-logo_fwzrt1.png" alt="Kaggle" style="width: 25px; height: 20px;">
+        </a>
+        <a href="https://huggingface.co/Ismail-707" title="Hugging Face">
+          <img src="https://res.cloudinary.com/dta3jl4fm/image/upload/v1731588685/huggingface-logo_odfu39.avif" alt="Hugging Face" style="width: 20px; height: 20px;">
+        </a>
+      </div>
+      <div class="credits" style="color: #0a0a3b; font-size: 14px;">
+        Designed by <a href="https://bootstrapmade.com/" style="color: #0a0a3b;">BootstrapMade</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scroll Top -->
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Preloader -->
+  <div id="preloader"></div>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/typed.js/typed.umd.js"></script>
+  <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
+  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+
+  <!-- Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>
